@@ -22,12 +22,8 @@ function moveZeroes(nums: number[]): number[] {
     if (nums[i] == 0) {
       console.log("if "+nums[i]);
       nums.splice(i, 1);
-      nums.push(0);  
-      i--;     
-    } else{
-      console.log("else"+ nums[i]);
-      i++;
-    }
+      nums.push(0);           
+    } 
   }
   
 
