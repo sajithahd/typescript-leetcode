@@ -17,15 +17,17 @@ moveZerosDiv.innerHTML += `<br/> Single number is: ${moveZeroes([
 ])} <br/>`;
 
 function moveZeroes(nums: number[]): number[] {
-  //[0,0,1] -> [1,0,0]
-  for(let i=0; i<nums.length; i++){
+  let zeroIndex = [];
+  for (let i = 0; i < nums.length; i++) {
     if (nums[i] == 0) {
-      console.log("if "+nums[i]);
-      nums.splice(i, 1);
-      nums.push(0);           
-    } 
+      zeroIndex.push(i);
+    }
   }
-  
-
+  console.log("zeros " + zeroIndex);
+  for (let i = 0; i < zeroIndex.length; i++) {
+    nums.splice(zeroIndex[i],1);
+    nums.push(4)
+  }
+  console.log("nums " + nums);
   return nums;
 }
