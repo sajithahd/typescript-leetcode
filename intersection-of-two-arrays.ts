@@ -1,7 +1,7 @@
 // Write TypeScript code!
 const intersection: HTMLElement = document.getElementById("intersection");
 
-intersection.innerHTML += `Single number is: ${intersect(
+intersection.innerHTML += ` <br/> Single number is: ${intersect(
   [1, 2, 2, 1],
   [2, 2]
 )} <br/>`;
