@@ -24,9 +24,7 @@ function moveZeroes(nums: number[]): number[] {
       console.log(nums[i]);
       nums.splice(i, 1);
       nums.push(0);
-    } else{
-      i++;
-    }
+    } 
   }
 
   return nums;
