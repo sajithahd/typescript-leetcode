@@ -25,6 +25,7 @@ function moveZeroes(nums: number[]): number[] {
       nums.splice(i, 1);
       nums.push(0);
     } 
+    i++;
   }
 
   return nums;
