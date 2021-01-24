@@ -1,11 +1,11 @@
 // Write TypeScript code!
 const intersection: HTMLElement = document.getElementById("intersection");
 
-intersection.innerHTML += `Single number is: ${singleNumber([2, 2, 1])} <br/>`;
-intersection.innerHTML += `Single number is: ${singleNumber([4, 1, 2, 1, 2])} <br/>`;
-intersection.innerHTML += `Single number is: ${singleNumber([1, 3, 1])} <br/>`;
+intersection.innerHTML += `Single number is: ${intersect([2, 2, 1])} <br/>`;
+intersection.innerHTML += `Single number is: ${intersect([4, 1, 2, 1, 2])} <br/>`;
+intersection.innerHTML += `Single number is: ${intersect([1, 3, 1])} <br/>`;
 
-function singleNumber(nums: number[]): number {
+function intersect(nums: number[]): number {
   let i = 0;
   nums.sort();
   while (i < nums.length) {
