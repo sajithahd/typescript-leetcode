@@ -19,13 +19,15 @@ moveZerosDiv.innerHTML += `<br/> Single number is: ${moveZeroes([
 function moveZeroes(nums: number[]): number[] {
   //[0,0,1] -> [1,0,0]
   let i = 0;
-  while (i < nums.length) {
+  for(let i=0 ;i<nums.length; i++){
     if (nums[i] == 0) {
       console.log(nums[i]);
       nums.splice(i, 1);
       nums.push(0);
-    } 
-    i++;
+       i++;
+    } else {
+      i++;
+    }
   }
 
   return nums;
