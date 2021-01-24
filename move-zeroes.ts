@@ -5,8 +5,8 @@ moveZerosDiv.innerHTML += ` <br/> Single number is: ${moveZeroes(
   [0,1,0,3,12]
 )} <br/>`;
 
-moveZerosDiv.innerHTML += `Single number is: ${moveZeroes(
-  [0,0,1]
+moveZerosDiv.innerHTML += `<br/> Single number is: ${moveZeroes(
+  [0,0,1,2]
 )} <br/>`;
 
 function moveZeroes(nums: number[]): number[] {
@@ -16,7 +16,8 @@ function moveZeroes(nums: number[]): number[] {
         if(nums[i]==0){
             console.log(nums[i]);
             nums.splice(i,1);
-            nums.push(0)
+            nums.push(0);
+            i=0;
         }
     }
 
