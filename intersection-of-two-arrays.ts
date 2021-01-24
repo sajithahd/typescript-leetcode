@@ -1,9 +1,9 @@
 // Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById("app");
+const intersection: HTMLElement = document.getElementById("intersection");
 
-appDiv.innerHTML += `Single number is: ${singleNumber([2, 2, 1])} <br/>`;
-appDiv.innerHTML += `Single number is: ${singleNumber([4, 1, 2, 1, 2])} <br/>`;
-appDiv.innerHTML += `Single number is: ${singleNumber([1, 3, 1])} <br/>`;
+intersection.innerHTML += `Single number is: ${singleNumber([2, 2, 1])} <br/>`;
+intersection.innerHTML += `Single number is: ${singleNumber([4, 1, 2, 1, 2])} <br/>`;
+intersection.innerHTML += `Single number is: ${singleNumber([1, 3, 1])} <br/>`;
 
 function singleNumber(nums: number[]): number {
   let i = 0;
