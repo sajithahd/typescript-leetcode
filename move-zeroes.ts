@@ -9,9 +9,9 @@ moveZerosDiv.innerHTML += `Single number is: ${moveZeroes(
   [0,0,1]
 )} <br/>`;
 
-function moveZeroes(nums: number[]): void {
+function moveZeroes(nums: number[]): number[] {
    //[0,0,1] -> [1,0,0]
-    nums = [0,0,1]
+   
     for(let i=0 ;i<nums.length; i++){
         if(nums[i]==0){
             console.log(nums[i]);
@@ -19,4 +19,6 @@ function moveZeroes(nums: number[]): void {
             nums.push(0)
         }
     }
+
+    return nums
 };
