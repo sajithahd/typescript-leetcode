@@ -3,8 +3,8 @@
 const twoSumDiv: HTMLElement = document.getElementById("twoSum");
 
 intersection.innerHTML += ` <br/> Two Sum: ${twoSum(
-  [1, 2, 2, 1],
-  8
+  [2,7,11,15],
+  9
 )} <br/>`;
 
 
